@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ProductInfo.Api</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\products.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Data\product-details.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

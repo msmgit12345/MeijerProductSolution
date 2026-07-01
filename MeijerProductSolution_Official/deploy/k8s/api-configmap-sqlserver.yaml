@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: productinfo-api-config
+  namespace: productinfo
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  ASPNETCORE_URLS: "http://+:5000"
+  DataSource__Provider: "SqlServer"
+  DataSource__AutoMigrate: "true"
